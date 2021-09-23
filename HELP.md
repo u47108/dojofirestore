@@ -1,5 +1,13 @@
 # Getting Started
 
+### Prerequisites
+
+What things you need to install the software and how to install them
+* Java 8
+* [Gradle](https://gradle.org//) - Dependency Management
+* [Lombok](https://projectlombok.org/setup/overview) - Java library
+
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
@@ -28,3 +36,20 @@ These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
+### API DOCS
+* [Accessing local](http://localhost:8080/swagger-ui/#/sample-controller)
+
+
+## Compile and Run this project
+
+Remember to compile in Java 8 or higher, and execute the following command
+
+```
+./gradlew clean build
+```
+
+And then you must execute the following command for run the application
+
+```
+./gradlew bootRun --args='--spring.profiles.active=local'
+```
